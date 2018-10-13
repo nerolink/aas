@@ -31,20 +31,7 @@ class RichGeometry(val geometry: Geometry, val spatialReference: SpatialReferenc
   }
 }
 
-case class Feature(val id:Option[JsValue],val properties:Map[String,JsValue],val geometry:RichGeometry){
-  def apply(property:String)=properties(property)
-  def get(property:String)=properties.get(property)
-}
 
-
-case class FeatureCollection(features:Array[Feature]) extends IndexedSeq[Feature ]{
-  def apply(index:Int): Feature=features(index)
-  def length:Int=features.length
-}
-
-implicit object FeatureJsonFormat extends RootJsonFormat[Feature]{
-
-}
 
 
 object RichGeometry extends Serializable{

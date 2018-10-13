@@ -77,7 +77,7 @@ object RunGraph extends Serializable {
     val topicDistRdd = topicDist.map { case Row(topic: String, cnt: Long) => (hashId(topic), cnt) }.rdd
     val topicDistGraph = Graph(topicDistRdd, topicGraph.edges)
     val chiSquaredGraph = topicDistGraph.mapTriplets(triplet =>
-      chiSq(tri plet.attr, triplet.srcAttr, triplet.dstAttr, T)
+      chiSq(triplet.attr, triplet.srcAttr, triplet.dstAttr, T)
     )
     chiSquaredGraph.edges.map(x => x.attr).stats()
 

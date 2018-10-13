@@ -22,7 +22,7 @@ object RunGraph {
     val spark = SparkSession.builder().getOrCreate()
     import spark.implicits._
 //    val rawXML: Dataset[String] = loadMedline(spark, "hdfs://labserver249:9000/medline/medsamp2016a.xml")
-        val rawXML: Dataset[String] = loadMedline(spark, "hdfs://labserver249:9000/medline/")
+    val rawXML: Dataset[String] = loadMedline(spark, "hdfs://labserver249:9000/medline/")
     val medline: Dataset[Seq[String]] = rawXML.map(majorTopic).cache()
     val topics: DataFrame = medline.flatMap(mesh => mesh) toDF ("topic")
     topics.createOrReplaceTempView("topics")
