@@ -9,6 +9,7 @@
         <module name="chapter7" />
         <module name="chapter8" />
         <module name="ML_exercise" />
+        <module name="Spark_SQL" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,7 @@
       <module name="chapter7" target="1.5" />
       <module name="chapter8" target="1.5" />
       <module name="ML_exercise" target="1.5" />
+      <module name="Spark_SQL" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
