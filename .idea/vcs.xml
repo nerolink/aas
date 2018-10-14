@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ML_exercise" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Spark_SQL" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/chapter7" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/chapter8" vcs="svn" />
   </component>
