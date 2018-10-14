@@ -11,5 +11,11 @@
         <module name="ML_exercise" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aas" target="1.5" />
+      <module name="chapter7" target="1.5" />
+      <module name="chapter8" target="1.5" />
+      <module name="ML_exercise" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
